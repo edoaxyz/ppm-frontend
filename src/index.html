@@ -1,0 +1,831 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="./main.css">
+  <title>Bootstrap w/ Webpack</title>
+</head>
+
+<body>
+  <div class="offcanvas my--sidebar offcanvas-start" data-bs-scroll="false" data-bs-backdrop="true"
+    id="offcanvasDarkNavbar">
+    <div class="my--sidebar--spacer"></div>
+    <div class="m-4">
+      <a class="btn btn-primary w-100">Subscribe Now</a>
+    </div>
+    <div class="d-lg-none d-flex align-items-space-between mx-3">
+      <div>
+        48°F <i class="bi bi-brightness-high fs-4"></i>
+      </div>
+      <div class="ms-2">
+        Saturday, April 8th 2023<br>
+        <a href="" class="fs-8 fw-light underline">E-Edition</a>
+      </div>
+    </div>
+    <div class="m-2">
+      <div>
+        <i class="bi bi-house"></i>
+        <span class="ms-2 fw-bold">Home Page</span>
+      </div>
+    </div>
+    <div class="accordion accordion-flush mx-2" id="accordionFlush">
+      <div class="accordion-item py-1">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed fs-7 p-2 m-0 fw-bold" type="button" data-bs-toggle="collapse"
+            data-bs-target="#flush-collapseOne">
+            Lorem
+          </button>
+        </h2>
+        <div id="flush-collapseOne" class="accordion-collapse collapse ms-3" data-bs-parent="#accordionFlush">
+          <a href="" class="fs-7 p-2 m-0 fw-bold d-block">Lorem</a>
+          <a href="" class="fs-7 p-2 m-0 fw-bold d-block">Lorem</a>
+          <a href="" class="fs-7 p-2 m-0 fw-bold d-block">Lorem</a>
+          <a href="" class="fs-7 p-2 m-0 fw-bold d-block">Lorem</a>
+        </div>
+      </div>
+      <div class="accordion-item py-1">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed fs-7 p-2 m-0 fw-bold" type="button" data-bs-toggle="collapse"
+            data-bs-target="#flush-c1">
+            Lorem
+          </button>
+        </h2>
+        <div id="flush-c1" class="accordion-collapse collapse ms-3" data-bs-parent="#accordionFlush">
+          <a href="" class="fs-7 p-2 m-0 fw-bold d-block">Lorem</a>
+          <a href="" class="fs-7 p-2 m-0 fw-bold d-block">Lorem</a>
+          <a href="" class="fs-7 p-2 m-0 fw-bold d-block">Lorem</a>
+          <a href="" class="fs-7 p-2 m-0 fw-bold d-block">Lorem</a>
+        </div>
+      </div>
+      <div class="accordion-item py-1">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed fs-7 p-2 m-0 fw-bold" type="button" data-bs-toggle="collapse"
+            data-bs-target="#flush-c2">
+            Lorem
+          </button>
+        </h2>
+        <div id="flush-c2" class="accordion-collapse collapse ms-3" data-bs-parent="#accordionFlush">
+          <a href="" class="fs-7 p-2 m-0 fw-bold d-block">Lorem</a>
+          <a href="" class="fs-7 p-2 m-0 fw-bold d-block">Lorem</a>
+          <a href="" class="fs-7 p-2 m-0 fw-bold d-block">Lorem</a>
+          <a href="" class="fs-7 p-2 m-0 fw-bold d-block">Lorem</a>
+        </div>
+      </div>
+      <div class="accordion-item py-1">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed fs-7 p-2 m-0 fw-bold" type="button" data-bs-toggle="collapse"
+            data-bs-target="#flush-c3">
+            Lorem
+          </button>
+        </h2>
+        <div id="flush-c3" class="accordion-collapse collapse ms-3" data-bs-parent="#accordionFlush">
+          <a href="" class="fs-7 p-2 m-0 fw-bold d-block">Lorem</a>
+          <a href="" class="fs-7 p-2 m-0 fw-bold d-block">Lorem</a>
+          <a href="" class="fs-7 p-2 m-0 fw-bold d-block">Lorem</a>
+          <a href="" class="fs-7 p-2 m-0 fw-bold d-block">Lorem</a>
+        </div>
+      </div>
+      <a href="" class="fs-7 p-2 m-0 mt-1 fw-bold d-block"> Lorem </a>
+      <a href="" class="fs-7 p-2 m-0 mt-1 fw-bold d-block"> Lorem </a>
+      <a href="" class="fs-7 p-2 m-0 mt-1 fw-bold d-block"> Lorem </a>
+      <a href="" class="fs-7 p-2 m-0 mt-1 fw-bold d-block"> Lorem </a>
+      <a href="" class="fs-7 p-2 m-0 my-4 fw-bold d-block"> Log in </a>
+    </div>
+
+    <div class="my--sidebar--newsletter p-4">
+      <span class="fw-bold fs-7 m-2 d-inline-block">Lorem</span><br>
+      <a href="" class="btn btn-primary d-inline-block w-100">Subscribe</a>
+    </div>
+  </div>
+  <div class="offcanvas my--left-sidebar offcanvas-end d-lg-none" data-bs-scroll="false" data-bs-backdrop="true"
+    id="offcanvasLeft">
+    <div class="my--sidebar--spacer"></div>
+    <div class="p-4">
+      <a class="btn btn-primary w-100 no-underline">Subscribe Now</a>
+      <a class="btn btn-primary w-100 mt-4 no-underline">Subscribe Now</a>
+    </div>
+
+    <div class="my--sidebar--newsletter p-4 position-absolute bottom-0">
+      <span class="fw-bold fs-7 m-2 d-inline-block">Lorem</span><br>
+      <a href="" class="btn btn-primary d-inline-block w-100">Subscribe</a>
+    </div>
+  </div>
+  <div class="offcanvas my--top-sidebar offcanvas-top" data-bs-scroll="false" data-bs-backdrop="true" id="offcanvasTop">
+    <div class="my--sidebar--spacer"></div>
+    <div class="p-3 d-flex align-items-center">
+      <i class="bi bi-search"></i>
+      <input class="w-100 mx-2" type="text" placeholder="Search..">
+      <a class="btn btn-primary">Search</a>
+    </div>
+
+  </div>
+  <nav class="fixed-top my--navbar">
+    <div class="container-fluid my--navbar--upper px-1 px-md-4">
+      <div class="row">
+        <div class="col-3">
+          <button class="my--navbar--toggler" type="button" data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasDarkNavbar">
+            <i class="bi bi-list"></i>
+            <i class="bi bi-x d-none"></i>
+            <span class="d-none d-lg-inline ms-1 fw-semibold">All sections</span>
+          </button>
+        </div>
+        <div class="col-6 p-0 d-flex justify-content-center align-items-center">
+          <img class="navbar-logo" src="https://via.placeholder.com/260x50/656ef5/ffffff">
+        </div>
+        <div class="col-3 d-flex justify-content-end align-items-center">
+          <div class="d-none d-lg-flex h-100 justify-content-end align-items-center">
+            <a href="" class="btn btn-primary me-2 py-2">Subscribe</a>
+            <a href="" class="btn btn-primary py-2">Log in</a>
+          </div>
+          <button class="btn no-active d-lg-none dropdown-toggle px-1" type="button" data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasLeft">
+            <i class="bi bi-person-fill"></i>
+          </button>
+          <button class="btn no-active my--top-navbar--toggler px-1" type="button" data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasTop">
+            <i class="bi bi-search"></i>
+            <i class="bi bi-x d-none"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <div class="my--sidebar--spacer"></div>
+  <div class="my--header">
+    <!-- header -->
+    <div class="container-xxl px-4">
+      <div class="row">
+        <div class="col-4">
+          <div class="d-flex align-items-space-between mx-3">
+            <div>
+              48°F <i class="bi bi-brightness-high fs-4"></i>
+            </div>
+            <div class="ms-2">
+              Saturday, April 8th 2023<br>
+              <a href="" class="fs-8 fw-light underline">E-Edition</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-4 text-center">
+          <img src="https://via.placeholder.com/300x75/656ef5/ffffff">
+        </div>
+        <div class="col-4"></div>
+      </div>
+      <div class="d-flex align-items-center justify-content-center p-3">
+        <a href="" class="mx-3">Lorem</a>
+        <a href="" class="mx-3">Lorem</a>
+        <a href="" class="mx-3">Lorem</a>
+        <a href="" class="mx-3">Lorem</a>
+        <a href="" class="mx-3">Lorem</a>
+        <a href="" class="mx-3">Lorem</a>
+        <a href="" class="mx-3">Lorem</a>
+      </div>
+    </div>
+    <div class="my--header--border"></div>
+    <div class="container-xxl my--header--trending">
+      <span class="text-primary text-uppercase mx-3 me-5 fw-bold">TRENDING: </span>
+      <a href="">Lorem ipsum</a>
+      <a href="">Lorem ipsum</a>
+      <a href="">Lorem ipsum</a>
+      <a href="">Lorem ipsum</a>
+    </div>
+  </div>
+  <div class="container-xxl my--body">
+    <!-- body -->
+    <div class="row  mt-4">
+      <div class="col-12 col-lg-9">
+        <div class="row">
+          <div class="col-12 col-md-9">
+            <div class="row my--news full-width-news">
+              <div class="col-12 col-sm-6 col-md-12 col-xl-6 text-center">
+                <a href="">
+                  <h3 class="my--title">
+                    Lorem ipsum dolor sit amet, consectetur adipisici elit <span class="my--comment"></span>
+                  </h3>
+                </a>
+                <a href="">
+                  <img src="https://picsum.photos/800/452" class="img-fluid mb-2 d-block d-sm-none d-md-block d-xl-none"
+                    alt="">
+                </a>
+                <p class="my--excerpt">
+                  Lorem ipsum dolor sit amet, consectetur adipisici elit, sed eiusmod tempor incidunt ut labore et
+                  dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                  aliquid ex ea commodi consequat.
+                </p>
+                <div class="related">
+                  <h6>Related</h6>
+                  <ul>
+                    <li>
+                      <a href="">
+                        <h6>CSS is among the core languages of the open web <span class="my--comment"></span></h6>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-12 col-sm-6 col-md-12 col-xl-6 d-none d-sm-block d-md-none d-xl-block">
+                <a href=""><img src="https://picsum.photos/800/452" class="img-fluid mb-2" alt=""></a>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-12 col-sm-6 col-lg-12 col-xl-6 my--news">
+                <div class="row">
+                  <div class="col-4 col-md-12 col-lg-7 col-xl-12">
+                    <a href=""><img src="https://picsum.photos/800/452" class="img-fluid mb-2" alt=""></a>
+                  </div>
+                  <div class="col col-lg-5 col-xl-12">
+                    <a href="">
+                      <h5 class="my--title">
+                        Lorem ipsum dolor sit amet, consectetur adipisici elit <span class="my--comment">3</span>
+                      </h5>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-sm-6 col-lg-12 col-xl-6 my--news">
+                <div class="row">
+                  <div class="col-4 col-md-12 col-lg-7 col-xl-12">
+                    <a href=""><img src="https://picsum.photos/800/452" class="img-fluid mb-2" alt=""></a>
+                  </div>
+                  <div class="col col-lg-5 col-xl-12">
+                    <a href="">
+                      <h5 class="my--title">
+                        Lorem ipsum dolor sit amet, consectetur adipisici elit <span class="my--comment">3</span>
+                      </h5>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-sm-6 col-lg-12 col-xl-6 my--news">
+                <div class="row">
+                  <div class="col-4 col-md-12 col-lg-7 col-xl-12">
+                    <a href=""><img src="https://picsum.photos/800/452" class="img-fluid mb-2" alt=""></a>
+                  </div>
+                  <div class="col col-lg-5 col-xl-12">
+                    <a href="">
+                      <h5 class="my--title">
+                        Lorem ipsum dolor sit amet, consectetur adipisici elit <span class="my--comment">3</span>
+                      </h5>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-sm-6 col-lg-12 col-xl-6 my--news">
+                <div class="row">
+                  <div class="col-4 col-md-12 col-lg-7 col-xl-12">
+                    <a href=""><img src="https://picsum.photos/800/452" class="img-fluid mb-2" alt=""></a>
+                  </div>
+                  <div class="col col-lg-5 col-xl-12">
+                    <a href="">
+                      <h5 class="my--title">
+                        Lorem ipsum dolor sit amet, consectetur adipisici elit <span class="my--comment">3</span>
+                      </h5>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <ul class="col-12 col-md-3 my--headlines">
+            <h5>LATEST HEADLINES</h5>
+            <li class="border-0 my--headlines--headline">
+              <a href="">
+                <h6>Lorem ipsum dolor sit amet
+                  <time datetime="2023-04-10 14:00:51">14 hours ago</time>
+                  <span class="my--comment">3</span>
+                </h6>
+              </a>
+            </li>
+            <li class="my--headlines--headline">
+              <a href="">
+                <h6>Lorem ipsum dolor sit amet
+                  <time datetime="2023-04-10 14:00:51">14 hours ago</time>
+                  <span class="my--comment">3</span>
+                </h6>
+              </a>
+            </li>
+            <li class="my--headlines--headline">
+              <a href="">
+                <h6>Lorem ipsum dolor sit amet
+                  <time datetime="2023-04-10 14:00:51">14 hours ago</time>
+                  <span class="my--comment">3</span>
+                </h6>
+              </a>
+            </li>
+            <li class="my--headlines--headline">
+              <a href="">
+                <h6>Lorem ipsum dolor sit amet
+                  <time datetime="2023-04-10 14:00:51">14 hours ago</time>
+                  <span class="my--comment">3</span>
+                </h6>
+              </a>
+            </li>
+            <li class="my--headlines--headline">
+              <a href="">
+                <h6>Lorem ipsum dolor sit amet
+                  <time datetime="2023-04-10 14:00:51">14 hours ago</time>
+                  <span class="my--comment">3</span>
+                </h6>
+              </a>
+            </li>
+            <li class="my--headlines--newsletter">
+              Sign up for newsletter<br>
+              <a href="" type="button" class="btn btn-outline-primary">SIGN UP</a>
+              <br><br>
+              Follow Us
+              <div class="my--social">
+                <a href="" class="my--social--fb">
+                  <i class="bi bi-facebook"></i>
+                </a>
+                <a href="" class="my--social--tw">
+                  <i class="bi bi-twitter"></i>
+                </a>
+                <a href="" class="my--social--ig">
+                  <i class="bi bi-instagram"></i>
+                </a>
+                <a href="" class="my--social--rss">
+                  <i class="bi bi-rss"></i>
+                </a>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="my--promotions">
+          <h5>PROMOTIONS & SPECIALS</h5>
+          <div class="row">
+            <a href="" class="col-6 col-md-2"><img class="img-fluid" src="https://picsum.photos/200/150"></a>
+            <a href="" class="col-6 col-md-2"><img class="img-fluid" src="https://picsum.photos/200/150"></a>
+          </div>
+          <a href="">SEE ALL</a>
+        </div>
+      </div>
+      <div class="col-12 col-lg-3 text-center my--banners">
+        <img src="https://picsum.photos/400/300" class="img-fluid d-inline-block d-md-none">
+        <img src="https://picsum.photos/400/500" class="img-fluid d-none d-md-inline-block">
+        <img src="https://picsum.photos/400/500" class="img-fluid">
+      </div>
+    </div>
+    <div class="my--large-banner">
+      <img class="img-fluid" src="https://picsum.photos/1200/300">
+    </div>
+    <div class="my--recommended row">
+      <div class="col-12 col-lg-9">
+        <h5>RECOMMENDED FOR YOU</h5>
+        <ol class="row">
+          <div class="col-12 col-sm-6">
+            <a href="">
+              <li>Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet </li>
+            </a>
+            <a href="">
+              <li>Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet </li>
+            </a>
+            <a href="">
+              <li>Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet </li>
+            </a>
+            <a href="">
+              <li>Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet </li>
+            </a>
+            <a href="">
+              <li>Lorem ipsum dolor</li>
+            </a>
+          </div>
+          <div class="col-12 col-sm-6">
+            <a href="">
+              <li>Lorem ipsum dolor sit amet</li>
+            </a>
+            <a href="">
+              <li>Lorem ipsum dolor sit amet</li>
+            </a>
+            <a href="">
+              <li>Lorem ipsum dolor sit amet</li>
+            </a>
+            <a href="">
+              <li>Lorem ipsum dolor sit amet</li>
+            </a>
+            <a href="">
+              <li>Lorem ipsum dolor sit amet</li>
+            </a>
+          </div>
+        </ol>
+      </div>
+      <div class="col-12 col-lg-3 text-center my--banners">
+        <img src="https://picsum.photos/400/300" class="img-fluid d-inline-block d-md-none">
+        <img src="https://picsum.photos/400/500" class="img-fluid d-none d-md-inline-block">
+      </div>
+    </div>
+    <div class="my--large-banner">
+      <img class="img-fluid" src="https://picsum.photos/1200/300">
+    </div>
+    <div class="my--categories row">
+      <div class="col-12 col-lg-9">
+        <div class="row">
+          <div class="col-12 col-sm-6 col-lg-4 my--category">
+            <a href="" class="my--category--title">Sports<i class="bi bi-chevron-right"></i></a>
+            <div class="my--category--news">
+              <a href="">
+                <img class="img-fluid" src="https://picsum.photos/500/300">
+              </a>
+              <a href="">
+                <h5>Lorem ipsum dolor sit amet: lore ipsdum<span class="my--comment">3</span></h5>
+              </a>
+              <p>
+                Once initialized, a counter's value can be increased or decreased using counter-increment. For example,
+                the following declaration would increment the section counter by one on every h3 tag.
+              </p>
+            </div>
+            <a href="" class="my--category--small-news">
+              Lorem ipsum dolor sit amet lorem lorem<span class="my--comment"></span>
+            </a>
+            <a href="" class="my--category--small-news">
+              Lorem ipsum dolor sit amet lorem lorem<span class="my--comment"></span>
+            </a>
+            <a href="" class="my--category--small-news">
+              Lorem ipsum dolor sit amet lorem lorem<span class="my--comment"></span>
+            </a>
+          </div>
+          <div class="col-12 col-sm-6 col-lg-4 my--category">
+            <a href="" class="my--category--title">Sports<i class="bi bi-chevron-right"></i></a>
+            <div class="my--category--news">
+              <a href="">
+                <img class="img-fluid" src="https://picsum.photos/500/300">
+              </a>
+              <a href="">
+                <h5>Lorem ipsum dolor sit amet: lore ipsdum<span class="my--comment">3</span></h5>
+              </a>
+              <p>
+                Once initialized, a counter's value can be increased or decreased using counter-increment. For example,
+                the following declaration would increment the section counter by one on every h3 tag.
+              </p>
+            </div>
+            <a href="" class="my--category--small-news">
+              Lorem ipsum dolor sit amet lorem lorem<span class="my--comment"></span>
+            </a>
+            <a href="" class="my--category--small-news">
+              Lorem ipsum dolor sit amet lorem lorem<span class="my--comment"></span>
+            </a>
+            <a href="" class="my--category--small-news">
+              Lorem ipsum dolor sit amet lorem lorem<span class="my--comment"></span>
+            </a>
+          </div>
+          <div class="col-12 col-sm-6 col-lg-4 my--category">
+            <a href="" class="my--category--title">Sports<i class="bi bi-chevron-right"></i></a>
+            <div class="my--category--news">
+              <a href="">
+                <img class="img-fluid" src="https://picsum.photos/500/300">
+              </a>
+              <a href="">
+                <h5>Lorem ipsum dolor sit amet: lore ipsdum<span class="my--comment">3</span></h5>
+              </a>
+              <p>
+                Once initialized, a counter's value can be increased or decreased using counter-increment. For example,
+                the following declaration would increment the section counter by one on every h3 tag.
+              </p>
+            </div>
+            <a href="" class="my--category--small-news">
+              Lorem ipsum dolor sit amet lorem lorem<span class="my--comment"></span>
+            </a>
+            <a href="" class="my--category--small-news">
+              Lorem ipsum dolor sit amet lorem lorem<span class="my--comment"></span>
+            </a>
+            <a href="" class="my--category--small-news">
+              Lorem ipsum dolor sit amet lorem lorem<span class="my--comment"></span>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-lg-3 text-center my--banners">
+        <img src="https://picsum.photos/400/300" class="img-fluid d-inline-block d-md-none">
+        <img src="https://picsum.photos/400/500" class="img-fluid d-none d-md-inline-block">
+      </div>
+    </div>
+    <div class="my--large-banner">
+      <img class="img-fluid" src="https://picsum.photos/1200/300">
+    </div>
+    <div class="my--photos row">
+      <div class="col-12 col-lg-9">
+        <a href="" class="my--photos--title">Photos and videos<i class="bi bi-chevron-right"></i></a>
+        <div class="row">
+          <div class="col-12 col-md-8 my--photos--photo">
+            <a href="" class="icon icon-large">
+              <img class="img-fluid w-100" src="https://picsum.photos/1000/500">
+            </a>
+            <a href="">
+              <h3>Lorem ipsum dolor sit amet: lore ipsdum<span class="my--comment">3</span></h3>
+            </a>
+            <p>
+              Once initialized, a counter's value can be increased or decreased using counter-increment. For example,
+              the following declaration would increment the section counter by one on every h3 tag.
+            </p>
+          </div>
+          <ul class="col-12 col-md-4 my--photos--list">
+            <li>
+              <a href="" class="icon"><img class="img-fluid" src="https://picsum.photos/200/100"></a>
+              <a href="">
+                <h6>Lorem ipsum dolor sit amet lorem<span class="my--comment"></span></h6>
+              </a>
+            </li>
+            <li>
+              <a href="" class="icon"><img class="img-fluid" src="https://picsum.photos/200/100"></a>
+              <a href="">
+                <h6>Lorem ipsum dolor sit amet lorem<span class="my--comment"></span></h6>
+              </a>
+            </li>
+            <li>
+              <a href="" class="icon"><img class="img-fluid" src="https://picsum.photos/200/100"></a>
+              <a href="">
+                <h6>Lorem ipsum dolor sit amet lorem<span class="my--comment"></span></h6>
+              </a>
+            </li>
+            <li>
+              <a href="" class=""><img class="img-fluid" src="https://picsum.photos/200/100"></a>
+              <a href="">
+                <h6>Lorem ipsum dolor sit amet lorem<span class="my--comment"></span></h6>
+              </a>
+            </li>
+            <li>
+              <a href="" class=""><img class="img-fluid" src="https://picsum.photos/200/100"></a>
+              <a href="">
+                <h6>Lorem ipsum dolor sit amet lorem<span class="my--comment"></span></h6>
+              </a>
+            </li>
+            <li>
+              <a href="" class="icon"><img class="img-fluid" src="https://picsum.photos/200/100"></a>
+              <a href="">
+                <h6>Lorem ipsum dolor sit amet lorem<span class="my--comment"></span></h6>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="my--photos--interactive">
+          <input type="checkbox" hidden id="hidephotos">
+          <label for="hidephotos">
+            <div>Show more photos</div>
+          </label>
+          <ul class="row my--photos--hidden">
+            <li class="col-6 col-md-4 col-lg-3">
+              <a href="" class="icon"><img class="img-fluid" src="https://picsum.photos/200/100"></a>
+              <a href="">
+                <h6>Lorem ipsum dolor sit amet lorem<span class="my--comment"></span></h6>
+              </a>
+            </li>
+            <li class="col-6 col-md-4 col-lg-3">
+              <a href="" class="icon"><img class="img-fluid" src="https://picsum.photos/200/100"></a>
+              <a href="">
+                <h6>Lorem ipsum dolor sit amet lorem<span class="my--comment"></span></h6>
+              </a>
+            </li>
+            <li class="col-6 col-md-4 col-lg-3">
+              <a href="" class="icon"><img class="img-fluid" src="https://picsum.photos/200/100"></a>
+              <a href="">
+                <h6>Lorem ipsum dolor sit amet lorem<span class="my--comment"></span></h6>
+              </a>
+            </li>
+            <li class="col-6 col-md-4 col-lg-3">
+              <a href="" class="icon"><img class="img-fluid" src="https://picsum.photos/200/100"></a>
+              <a href="">
+                <h6>Lorem ipsum dolor sit amet lorem<span class="my--comment"></span></h6>
+              </a>
+            </li>
+            <li class="col-6 col-md-4 col-lg-3">
+              <a href="" class="icon"><img class="img-fluid" src="https://picsum.photos/200/100"></a>
+              <a href="">
+                <h6>Lorem ipsum dolor sit amet lorem<span class="my--comment"></span></h6>
+              </a>
+            </li>
+            <li class="col-6 col-md-4 col-lg-3">
+              <a href="" class="icon"><img class="img-fluid" src="https://picsum.photos/200/100"></a>
+              <a href="">
+                <h6>Lorem ipsum dolor sit amet lorem<span class="my--comment"></span></h6>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-12 col-lg-3 text-center my--banners">
+        <img src="https://picsum.photos/400/300" class="img-fluid d-inline-block d-md-none">
+        <img src="https://picsum.photos/400/500" class="img-fluid d-none d-md-inline-block">
+      </div>
+    </div>
+    <div class="my--categories-2 row">
+      <div class="col-12 col-lg-9">
+        <a href="" class="my--category--title">Sports<i class="bi bi-chevron-right"></i></a>
+        <div class="row my--category mb-5">
+          <div class="col-12 col-md-6 col-lg-4">
+            <a href="" class="icon icon-large">
+              <img class="img-fluid w-100" src="https://picsum.photos/1000/500">
+            </a>
+          </div>
+          <div class="col-12 col-md-6 col-lg-4 my--category--news">
+            <a href="">
+              <h2 class="fw-bold">Lorem ipsum dolor sit amet: lore ipsdum<span class="my--comment"></span></h2>
+            </a>
+            <p class="serif-pro">
+              Once initialized, a counter's value can be increased or decreased using counter-increment. For example,
+              the following declaration would increment the section counter by one on every h3 tag.
+            </p>
+          </div>
+          <div class="d-none d-md-block d-lg-none col-md-6 col"> </div>
+          <div class="col-12 col-md-6 col-lg-4">
+            <a href="" class="my--category--small-news pt-0">
+              Lorem ipsum dolor sit amet lorem lorem<span class="my--comment"></span>
+            </a>
+            <a href="" class="my--category--small-news">
+              Lorem ipsum dolor sit amet lorem lorem<span class="my--comment"></span>
+            </a>
+            <a href="" class="my--category--small-news">
+              Lorem ipsum dolor sit amet lorem lorem<span class="my--comment"></span>
+            </a>
+          </div>
+        </div><a href="" class="my--category--title">Sports<i class="bi bi-chevron-right"></i></a>
+        <div class="row my--category mb-5">
+          <div class="col-12 col-md-6 col-lg-4">
+            <a href="" class="icon icon-large">
+              <img class="img-fluid w-100" src="https://picsum.photos/1000/500">
+            </a>
+          </div>
+          <div class="col-12 col-md-6 col-lg-4 my--category--news">
+            <a href="">
+              <h2 class="fw-bold">Lorem ipsum dolor sit amet: lore ipsdum<span class="my--comment"></span></h2>
+            </a>
+            <p class="serif-pro">
+              Once initialized, a counter's value can be increased or decreased using counter-increment. For example,
+              the following declaration would increment the section counter by one on every h3 tag.
+            </p>
+          </div>
+          <div class="d-none d-md-block d-lg-none col-md-6 col"> </div>
+          <div class="col-12 col-md-6 col-lg-4">
+            <a href="" class="my--category--small-news pt-0">
+              Lorem ipsum dolor sit amet lorem lorem<span class="my--comment"></span>
+            </a>
+            <a href="" class="my--category--small-news">
+              Lorem ipsum dolor sit amet lorem lorem<span class="my--comment"></span>
+            </a>
+            <a href="" class="my--category--small-news">
+              Lorem ipsum dolor sit amet lorem lorem<span class="my--comment"></span>
+            </a>
+          </div>
+        </div>
+        <a href="" class="my--category--title">Sports<i class="bi bi-chevron-right"></i></a>
+        <div class="row my--category mb-5">
+          <div class="col-12 col-md-6 col-lg-4">
+            <a href="" class="icon icon-large">
+              <img class="img-fluid w-100" src="https://picsum.photos/1000/500">
+            </a>
+          </div>
+          <div class="col-12 col-md-6 col-lg-4 my--category--news">
+            <a href="">
+              <h2 class="fw-bold">Lorem ipsum dolor sit amet: lore ipsdum<span class="my--comment"></span></h2>
+            </a>
+            <p class="serif-pro">
+              Once initialized, a counter's value can be increased or decreased using counter-increment. For example,
+              the following declaration would increment the section counter by one on every h3 tag.
+            </p>
+          </div>
+          <div class="d-none d-md-block d-lg-none col-md-6 col"> </div>
+          <div class="col-12 col-md-6 col-lg-4">
+            <a href="" class="my--category--small-news pt-0">
+              Lorem ipsum dolor sit amet lorem lorem<span class="my--comment"></span>
+            </a>
+            <a href="" class="my--category--small-news">
+              Lorem ipsum dolor sit amet lorem lorem<span class="my--comment"></span>
+            </a>
+            <a href="" class="my--category--small-news">
+              Lorem ipsum dolor sit amet lorem lorem<span class="my--comment"></span>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-lg-3 text-center my--banners">
+        <img src="https://picsum.photos/400/300" class="img-fluid d-inline-block d-md-none">
+        <img src="https://picsum.photos/400/500" class="img-fluid d-none d-md-inline-block">
+      </div>
+    </div>
+    <div class="my--recommended row">
+      <div class="col-12">
+        <h5>TRENDING NATIONALLY</h5>
+        <ol class="row">
+          <div class="col-12 col-sm-6">
+            <a href="">
+              <li>Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet </li>
+            </a>
+            <a href="">
+              <li>Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet </li>
+            </a>
+            <a href="">
+              <li>Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet </li>
+            </a>
+          </div>
+          <div class="col-12 col-sm-6">
+            <a href="">
+              <li>Lorem ipsum dolor sit amet</li>
+            </a>
+            <a href="">
+              <li>Lorem ipsum dolor sit amet</li>
+            </a>
+          </div>
+        </ol>
+      </div>
+    </div>
+    <div class="my--large-banner">
+      <img class="img-fluid" src="https://picsum.photos/1200/300">
+    </div>
+  </div>
+  <div class="my--footer">
+    <div class="container-xxl text-center text-md-start">
+      <img class="img-fluid mb-3" src="https://via.placeholder.com/260x50/656ef5/ffffff">
+      <div class="row pb-4">
+        <div class="col-12 col-md-6 col-lg-4">
+          <ul class="my--footer--section">
+            <li>
+              <a href="">Lorem ipsum</a>
+              <button data-bs-toggle="collapse" data-bs-target="#footerOne">
+                <i class="bi bi-chevron-down"></i>
+              </button>
+            </li>
+            <div id="footerOne" class="collapse d-md-block">
+              <li><a href="">Lorem ipsum</a></li>
+              <li><a href="">Lorem ipsum</a></li>
+              <li><a href="">Lorem ipsum</a></li>
+            </div>
+          </ul>
+          <ul class="my--footer--section">
+            <li>
+              <a href="">Lorem ipsum</a>
+              <button data-bs-toggle="collapse" data-bs-target="#footerTwo">
+                <i class="bi bi-chevron-down"></i>
+              </button>
+            </li>
+            <div id="footerTwo" class="collapse d-md-block">
+              <li><a href="">Lorem ipsum</a></li>
+              <li><a href="">Lorem ipsum</a></li>
+              <li><a href="">Lorem ipsum</a></li>
+            </div>
+          </ul>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4">
+          <ul class="my--footer--section">
+            <li>
+              <a href="">Lorem ipsum</a>
+              <button data-bs-toggle="collapse" data-bs-target="#footer3">
+                <i class="bi bi-chevron-down"></i>
+              </button>
+            </li>
+            <div id="footer3" class="collapse d-md-block">
+              <li><a href="">Lorem ipsum</a></li>
+              <li><a href="">Lorem ipsum</a></li>
+            </div>
+          </ul>
+          <ul class="my--footer--section">
+            <li>
+              <a href="">Lorem ipsum</a>
+              <button data-bs-toggle="collapse" data-bs-target="#footer4">
+                <i class="bi bi-chevron-down"></i>
+              </button>
+            </li>
+            <div id="footer4" class="collapse d-md-block">
+              <li><a href="">Lorem ipsum</a></li>
+              <li><a href="">Lorem ipsum</a></li>
+              <li><a href="">Lorem ipsum</a></li>
+              <li><a href="">Lorem ipsum</a></li>
+            </div>
+          </ul>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4">
+          <ul class="my--footer--section">
+            <li>Lorem ipsum</li>
+            <div class="my--social text-start">
+              <a href="" class="my--social--fb">
+                <i class="bi bi-facebook"></i>
+              </a>
+              <a href="" class="my--social--tw">
+                <i class="bi bi-twitter"></i>
+              </a>
+              <a href="" class="my--social--ig">
+                <i class="bi bi-instagram"></i>
+              </a>
+              <a href="" class="my--social--rss">
+                <i class="bi bi-rss"></i>
+              </a>
+            </div>
+            <a class="btn btn-primary w-100 mt-1 p-3 p-md-2">LOREM IPSUM</a>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="my--footer--legals">
+      <div class="container-xxl d-inline-block">
+        <a href="">Lorem ipsum</a>
+        <a href="">Lorem ipsum</a>
+        <a href="">Lorem ipsum</a>
+        <a href="">Lorem ipsum</a>
+        <a href="">Lorem ipsum</a>
+        <span>Lorem ipsum</span>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
